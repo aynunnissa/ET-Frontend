@@ -70,6 +70,9 @@ module.exports = {
           100: "#FEDCD2",
           main: "#D9253D"
         },
+      },
+      dropShadow: {
+        main: '0px 2px 30px rgba(112, 112, 112, 0.1)'
       }
     },
   },
@@ -88,12 +91,17 @@ module.exports = {
         },
         '.title-2': {
           fontWeight: '600',
-          fontSize: pxToVw(35),
-          lineHeight: pxToVw(48),
+          fontSize: '18px',
+          lineHeight: 'auto',
+
+          '@media (min-width: 576px)': {
+            fontSize: '35px',
+            lineHeight: '48px',
+          }
         },
         '.title-3': {
           fontWeight: '700',
-          fontSize: '18px',
+          fontSize: '20px',
           lineHeight: 'auto',
 
           '@media (min-width: 576px)': {
@@ -111,8 +119,13 @@ module.exports = {
           }
         },
         '.caption-1': {
-          fontSize: pxToVw(21),
-          lineHeight: pxToVw(30),
+          fontSize: '16px',
+          lineHeight: 'auto',
+
+          '@media (min-width: 768px)': {
+            fontSize: '21px',
+            lineHeight: '30px',
+          }
         },
         '.caption-2': {
           fontSize: pxToVw(18),
