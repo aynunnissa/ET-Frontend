@@ -96,7 +96,7 @@ module.exports = {
           lineHeight: pxToVw(30),
         },
         '.caption-1': {
-          fontSize: pxToVw(23),
+          fontSize: pxToVw(21),
           lineHeight: pxToVw(30),
         },
         '.caption-2': {
