@@ -1,3 +1,6 @@
+const plugin = require('tailwindcss/plugin')
+const { default: pxToVw } = require('./src/helper/pxToVw')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -70,6 +73,38 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function({ addComponents }) {
+      addComponents({
+        '.title-1': {
+          fontWeight: '700',
+          fontSize: pxToVw(50),
+          lineHeight: pxToVw(60),
+        },
+        '.title-2': {
+          fontWeight: '600',
+          fontSize: pxToVw(35),
+          lineHeight: pxToVw(48),
+        },
+        '.title-3': {
+          fontWeight: '500',
+          fontSize: pxToVw(25),
+          lineHeight: pxToVw(30),
+        },
+        '.headline': {
+          fontSize: pxToVw(25),
+          lineHeight: pxToVw(30),
+        },
+        '.caption-1': {
+          fontSize: pxToVw(23),
+          lineHeight: pxToVw(30),
+        },
+        '.caption-2': {
+          fontSize: pxToVw(18),
+          lineHeight: pxToVw(20),
+        }
+      })
+    })
+  ],
 }
 
