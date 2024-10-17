@@ -13,8 +13,12 @@ const Button = (props: IButton) => {
   return(
     <button
       className={classNames(
-        `py-[10px] px-[20px] flex items-center justify-center border-none rounded-full bg-secondary-main text-neutral-main`,
+        `
+          py-[10px] px-[20px] flex items-center justify-center border-none 
+          bg-secondary-main text-neutral-main hover:bg-secondary-400 active:bg-secondary-600
+        `,
         {
+          'rounded-full': props.isRounded,
           'rounded-[5px]': !props.isRounded,
           'w-[72px] h-[72px]': props.isRounded,
         }
