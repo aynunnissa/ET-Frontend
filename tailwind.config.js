@@ -78,8 +78,13 @@ module.exports = {
       addComponents({
         '.title-1': {
           fontWeight: '700',
-          fontSize: pxToVw(50),
-          lineHeight: pxToVw(60),
+          fontSize: '24px',
+          lineHeight: '30px',
+
+          '@media (min-width: 576px)': {
+            fontSize: '50px',
+            lineHeight: '60px',
+          }
         },
         '.title-2': {
           fontWeight: '600',
@@ -87,13 +92,23 @@ module.exports = {
           lineHeight: pxToVw(48),
         },
         '.title-3': {
-          fontWeight: '500',
-          fontSize: pxToVw(25),
-          lineHeight: pxToVw(30),
+          fontWeight: '700',
+          fontSize: '18px',
+          lineHeight: 'auto',
+
+          '@media (min-width: 576px)': {
+            fontSize: '25px',
+            lineHeight: '30px',
+          }
         },
         '.headline': {
-          fontSize: pxToVw(25),
-          lineHeight: pxToVw(30),
+          fontSize: '18px',
+          lineHeight: 'auto',
+
+          '@media (min-width: 576px)': {
+            fontSize: '25px',
+            lineHeight: '30px',
+          }
         },
         '.caption-1': {
           fontSize: pxToVw(21),

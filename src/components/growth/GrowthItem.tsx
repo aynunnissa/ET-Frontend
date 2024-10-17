@@ -11,7 +11,7 @@ const GrowthItem = (props: IProps) => {
         <img
           src={props.icon}
           alt={props.title}
-          className="h-[40px] md:h-[75px] w-auto"
+          className="h-[45px] md:h-[75px] w-auto"
         />
       </div>
       <div>

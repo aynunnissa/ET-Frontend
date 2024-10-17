@@ -6,7 +6,7 @@ const GrowthSection = () => {
   return(
     <SectionLayout>
       <div>
-        <div className="w-[45%] mx-auto">
+        <div className="w-full lg:w-[45%] mx-auto">
           <h2 className="title-1 text-primary-500">Menuju Ekosistem yang Lebih Kuat Bersama Eratani</h2>
         </div>
         <div className="w-full md:w-2/3 mx-auto mt-12">
