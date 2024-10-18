@@ -1,5 +1,10 @@
 import classNames from "classnames";
 
+const SIZES = {
+  normal: 'py-[10px] px-[20px]',
+  large: 'py-[10px] px-[64px]'
+} as const;
+
 interface IButton {
   text?: string,
   isRounded?: boolean,
@@ -9,16 +14,18 @@ interface IButton {
   primary?: boolean,
   icon?: string,
   leftIcon?: string,
-  rightIcon?: string
+  rightIcon?: string,
+  size?: keyof typeof SIZES
 }
 
+
 const Button = (props: IButton) => {
+  const btnSize = props.size ?? 'normal';
+
   return(
     <button
       className={classNames(
-        `
-          py-[10px] px-[20px] flex items-center justify-center gap-2 border-none
-        `,
+        `flex items-center justify-center gap-2 border-none ${SIZES[btnSize]}`,
         {
           'rounded-full': props.isRounded,
           'rounded-[5px]': !props.isRounded,
