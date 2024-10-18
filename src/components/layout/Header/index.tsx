@@ -8,16 +8,22 @@ import styles from "./header.module.css";
 import HamburgerNav from "../../../assets/icons/hamburger-nav.svg";
 import Logo from '../../../assets/images/logo.webp';
 
+const LinkItems = () => {
+  return (
+    <ul className={`${styles.navigation__items} flex flex-col md:flex-row items-center justify-center gap-4 lg:gap-8 xl:gap-16`}>
+        {
+          MENU.map((menu) => (
+            <li key={menu.title} className="w-auto">
+              <LinkItem title={menu.title} url={menu.url} />
+            </li>
+          ))
+        }
+    </ul>
+  );
+};
+
 const Header = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
-
-  const LinkItems = () => {
-    return MENU.map((menu) => (
-      <li key={menu.title} className="w-auto">
-        <LinkItem title={menu.title} url={menu.url} />
-      </li>
-    ));
-  };
 
   function toggleNavbarHandler() {
     setIsNavbarOpen(prev => !prev);
@@ -40,9 +46,7 @@ const Header = () => {
             ${isNavbarOpen ? 'right-0' : 'right-[-100%]'}`}
         >
           <div className="flex-1">
-            <ul className={`${styles.navigation__items} flex flex-col md:flex-row items-center justify-center gap-4 lg:gap-8 xl:gap-16`}>
-              <LinkItems />
-            </ul>
+            <LinkItems />
           </div>
           <div className="flex gap-4">
             <Button text='Mitra Petani' />
