@@ -20,7 +20,8 @@ const TextField = (props: IProps) => {
         onChange={props.valueChangeHandler}
         onBlur={props.inputBlurHandler}
         placeholder={props.placeholder}
-      >{props.value}</textarea>
+        value={props.value}
+      />
       {props.hasError && (
         <p className="text-et-red-main text-left mt-1 ml-0.5">{FORM_ERROR[props.type]}</p>
       )}

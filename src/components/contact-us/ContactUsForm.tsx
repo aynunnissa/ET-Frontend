@@ -3,8 +3,11 @@ import Button from "../shared/Button";
 import { FORM_TYPE } from "./constants";
 import Input from "../shared/form/Input";
 import TextField from "../shared/form/TextField";
+import ContactUsSuccess from "../modal/ContactUsSuccess";
+import { useState } from "react";
 
 const ContactUsForm = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const name = useInput((value: string) => value.trim() !== '');
   const email = useInput((value: string) => value.includes('@'));
   const phone = useInput((value: string) => (/^\d*$/).test(value) && value.trim() !== '');
@@ -27,7 +30,12 @@ const ContactUsForm = () => {
     email.reset();
     phone.reset();
     message.reset();
+    setIsModalOpen(true);
   };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  }
 
   const nameInputClasses = name.hasError
     ? 'form-control invalid'
@@ -63,6 +71,7 @@ const ContactUsForm = () => {
           </form>
         </div>
       </div>
+      {isModalOpen && <ContactUsSuccess isOpen={isModalOpen} handleClose={handleCloseModal} />}
     </div>
   );
 }
