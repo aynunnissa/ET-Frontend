@@ -6,6 +6,7 @@ import GrowthSection from './features/home/growth';
 import HeroSection from './features/home/hero-banners';
 import JoinUsSection from './features/home/join-us';
 import PartnersSection from './features/home/partners';
+import TestimoniSection from './features/home/testimoni';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <HeroSection />
         <GrowthSection />
         <CoreValues />
+        <TestimoniSection />
         <PartnersSection />
         <JoinUsSection />
         <ContactUs />
