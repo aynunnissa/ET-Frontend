@@ -25,9 +25,8 @@ export default function HeroBanner() {
       }}
       autoplay={{
         delay: 3000,
-        
       }}
-      modules={[Pagination, Navigation]}
+      modules={[Pagination, Navigation, Autoplay]}
       className="mySwiper"
     >
       <SwiperSlide>

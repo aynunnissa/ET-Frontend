@@ -6,7 +6,7 @@ import PIPanganImg from "../../../assets/images/PI Pangan.webp";
 const PartnersSection = () => {
   return(
     <SectionLayout>
-       <div className="w-full lg:w-[60%] mx-auto">
+        <div className="w-full lg:w-[60%] mx-auto">
           <h2 className="title-1 text-primary-500">Mitra Kami</h2>
         </div>
         <div className="flex items-center gap-8 mt-8 md:mt-16">
