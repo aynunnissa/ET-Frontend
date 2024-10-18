@@ -7,7 +7,7 @@ interface IProps {
 
 const Layout = ({ children }: IProps) => {
   return(
-    <div className="pt-[80px]">
+    <div>
       <Header />
       {children}
     </div>
