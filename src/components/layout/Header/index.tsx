@@ -30,7 +30,7 @@ const Header = () => {
   }
 
   return (
-    <nav className="header fixed top-0 left-0 right-0 bg-transparent md:bg-white flex items-center h-[80px] px-8 sm:px-14 lg:px-18 xl:px-20">
+    <nav className="header z-10 fixed top-0 left-0 right-0 bg-transparent md:bg-white flex items-center h-[80px] px-8 sm:px-14 lg:px-18 xl:px-20">
       <div className="flex items-center justify-between relative gap-8 w-full">
         <div className="h-[30px] lg:h-[45px]">
           <img
