@@ -2,6 +2,7 @@ import './App.css';
 import Layout from './components/layout/Layout';
 import CoreValues from './features/home/core-values';
 import GrowthSection from './features/home/growth';
+import JoinUsSection from './features/home/join-us';
 import PartnersSection from './features/home/partners';
 
 function App() {
@@ -9,12 +10,9 @@ function App() {
     <div className="App">
       <Layout>
         <GrowthSection />
-      </Layout>
-      <Layout>
         <CoreValues />
-      </Layout>
-      <Layout>
         <PartnersSection />
+        <JoinUsSection />
       </Layout>
     </div>
   );

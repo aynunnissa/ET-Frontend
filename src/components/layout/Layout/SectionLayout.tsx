@@ -6,7 +6,7 @@ interface IProps {
 
 const SectionLayout = ({ children }: IProps) => {
   return(
-    <div className="px-5 md:px-20 py-9 bg-white">
+    <div className="px-5 md:px-20 py-9 md:py-20 bg-white">
       {children}
     </div>
   )
