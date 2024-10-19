@@ -15,7 +15,8 @@ interface IButton {
   icon?: string,
   leftIcon?: string,
   rightIcon?: string,
-  size?: keyof typeof SIZES
+  size?: keyof typeof SIZES,
+  handleClick?: () => void
 }
 
 
@@ -24,6 +25,7 @@ const Button = (props: IButton) => {
 
   return(
     <button
+      onClick={props.handleClick}
       className={classNames(
         `flex items-center justify-center gap-2 border-none ${SIZES[btnSize]}`,
         {
