@@ -1,13 +1,15 @@
+import { lazy } from 'react';
 import './App.css';
 import Layout from './components/layout/Layout';
-import BackToTop from './components/shared/button/BackToTop';
-import ContactUs from './features/home/contact-us';
-import CoreValues from './features/home/core-values';
 import GrowthSection from './features/home/growth';
 import HeroSection from './features/home/hero-banners';
-import JoinUsSection from './features/home/join-us';
-import PartnersSection from './features/home/partners';
-import TestimoniSection from './features/home/testimoni';
+import BackToTop from './components/shared/button/BackToTop';
+
+const ContactUs = lazy(() => import('./features/home/contact-us'));
+const CoreValues = lazy(() => import('./features/home/core-values'));
+const JoinUsSection = lazy(() => import('./features/home/join-us'));
+const PartnersSection = lazy(() => import('./features/home/partners'));
+const TestimoniSection = lazy(() => import('./features/home/testimoni'));
 
 function App() {
   return (
