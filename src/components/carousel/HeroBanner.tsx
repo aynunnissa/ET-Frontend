@@ -26,52 +26,52 @@ export default function HeroBanner() {
       autoplay={{
         delay: 3000,
       }}
-      modules={[Pagination, Navigation, Autoplay]}
+      modules={[Pagination, Navigation]}
       className="mySwiper"
     >
       <SwiperSlide>
         <div className='relative h-full w-full'>
           <div className='absolute inset-0 z-10'>
             <div className='flex items-center justify-center h-full w-full text-white'>
-              <div className='w-[95%] md:w-[80%]'>
+              <div className='w-[90%] md:w-[80%]'>
                 <h2 className="title-1 mb-8">#SelaluAdaUntukPetani</h2>
-                <p className="title-3 font-medium leading-none md:leading-10 w-full tracking-normal md:tracking-wider">
+                <p className="caption-1 md:font-2xl md:font-semibold leading-none md:leading-10 w-full tracking-normal md:tracking-wider">
                   Eratani adalah perusahaan startup Agri-tech yang fokus membangun sebuah ekosistem pertanian yang kuat dengan mendigitalisasi proses pertanian dari hulu hingga ke hilir. Eratani berupaya memberikan kemudahan akses kepada petani melalui teknologi yang kami miliki untuk meningkatkan produktivitas dan kesejahteraan ekosistem pertanian.
                 </p>
               </div>
             </div>
           </div>
-          <img src={Hero1Image} alt='Hero banner 1' className='brightness-50' />
+          <img src={Hero1Image} alt='Hero banner 1' className="w-full h-full object-cover brightness-50" />
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className='relative h-full w-full'>
           <div className='absolute inset-0 z-10'>
             <div className='flex items-center justify-center h-full w-full text-white'>
-              <div className='w-[95%] md:w-[80%]'>
+              <div className='w-[90%] md:w-[80%]'>
                 <h2 className="title-1 mb-8">#SelaluAdaUntukPetani</h2>
-                <p className="title-3 font-medium leading-none md:leading-10 w-full tracking-normal md:tracking-wider">
+                <p className="caption-1 md:font-2xl md:font-semibold leading-none md:leading-10 w-full tracking-normal md:tracking-wider">
                   Eratani adalah perusahaan startup Agri-tech yang fokus membangun sebuah ekosistem pertanian yang kuat dengan mendigitalisasi proses pertanian dari hulu hingga ke hilir. Eratani berupaya memberikan kemudahan akses kepada petani melalui teknologi yang kami miliki untuk meningkatkan produktivitas dan kesejahteraan ekosistem pertanian.
                 </p>
               </div>
             </div>
           </div>
-          <img src={Hero2Image} alt='Hero banner 2' className='brightness-50' />
+          <img src={Hero2Image} alt='Hero banner 2' className="w-full h-full object-cover brightness-50" />
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className='relative h-full w-full'>
           <div className='absolute inset-0 z-10'>
             <div className='flex items-center justify-center h-full w-full text-white'>
-              <div className='w-[95%] md:w-[80%]'>
+              <div className='w-[90%] md:w-[80%]'>
                 <h2 className="title-1 mb-8">#SelaluAdaUntukPetani</h2>
-                <p className="title-3 font-medium leading-none md:leading-10 w-full tracking-normal md:tracking-wider">
+                <p className="caption-1 md:font-2xl md:font-semibold leading-none md:leading-10 w-full tracking-normal md:tracking-wider">
                   Eratani adalah perusahaan startup Agri-tech yang fokus membangun sebuah ekosistem pertanian yang kuat dengan mendigitalisasi proses pertanian dari hulu hingga ke hilir. Eratani berupaya memberikan kemudahan akses kepada petani melalui teknologi yang kami miliki untuk meningkatkan produktivitas dan kesejahteraan ekosistem pertanian.
                 </p>
               </div>
             </div>
           </div>
-          <img src={Hero3Image} alt='Hero banner 3' className='brightness-50' />
+          <img src={Hero3Image} alt='Hero banner 3' className="w-full h-full object-cover brightness-50" />
         </div>
       </SwiperSlide>
     </Swiper>

@@ -3,7 +3,7 @@ import HeroBanner from "../../../components/carousel/HeroBanner";
 const HeroSection = () => {
   return(
     <div>
-      <div className="h-screen">
+      <div className="h-[70vh] xl:h-screen">
         <HeroBanner />
       </div>
     </div>
