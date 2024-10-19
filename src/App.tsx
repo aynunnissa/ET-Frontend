@@ -1,5 +1,6 @@
 import './App.css';
 import Layout from './components/layout/Layout';
+import BackToTop from './components/shared/button/BackToTop';
 import ContactUs from './features/home/contact-us';
 import CoreValues from './features/home/core-values';
 import GrowthSection from './features/home/growth';
@@ -19,6 +20,7 @@ function App() {
         <PartnersSection />
         <JoinUsSection />
         <ContactUs />
+        <BackToTop />
       </Layout>
     </div>
   );
