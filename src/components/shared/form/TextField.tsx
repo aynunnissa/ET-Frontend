@@ -1,5 +1,5 @@
 import { FORM_ERROR } from "../../contact-us/constants";
-import styles from "./form.module.css";
+import "./form.css";
 
 interface IProps {
   type: string,
@@ -16,7 +16,7 @@ const TextField = (props: IProps) => {
     <div className={props.class}>
       <textarea
         id={props.type}
-        className={styles.form__input}
+        className="form__input"
         onChange={props.valueChangeHandler}
         onBlur={props.inputBlurHandler}
         placeholder={props.placeholder}

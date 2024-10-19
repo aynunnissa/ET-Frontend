@@ -33,7 +33,7 @@ const ContactUsSuccess = ({ isOpen, handleClose }: IProps) => {
 
   return(
     createPortal(
-      <div className="fixed left-0 right-0 bottom-0 top-0">
+      <div className="fixed z-50 left-0 right-0 bottom-0 top-0">
         <div className="bg-neutral-main absolute left-0 z-100 right-0 bottom-0 top-0 opacity-50"></div>
         <div className="flex items-center h-full">
           <div className="relative w-full px-24 py-24 flex justify-center bg-white" ref={modalRef}>

@@ -85,9 +85,14 @@ module.exports = {
           lineHeight: '30px',
 
           '@media (min-width: 576px)': {
+            fontSize: '32px',
+            lineHeight: '48px',
+          },
+
+          '@media (min-width: 768px)': {
             fontSize: '50px',
             lineHeight: '60px',
-          }
+          },
         },
         '.title-2': {
           fontWeight: '600',
@@ -101,15 +106,6 @@ module.exports = {
         },
         '.title-3': {
           fontWeight: '700',
-          fontSize: '20px',
-          lineHeight: 'auto',
-
-          '@media (min-width: 576px)': {
-            fontSize: '25px',
-            lineHeight: '30px',
-          }
-        },
-        '.headline': {
           fontSize: '18px',
           lineHeight: 'auto',
 
@@ -118,8 +114,17 @@ module.exports = {
             lineHeight: '30px',
           }
         },
+        '.headline': {
+          fontSize: '14px',
+          lineHeight: 'auto',
+
+          '@media (min-width: 576px)': {
+            fontSize: '25px',
+            lineHeight: '30px',
+          }
+        },
         '.caption-1': {
-          fontSize: '16px',
+          fontSize: '12px',
           lineHeight: 'auto',
 
           '@media (min-width: 768px)': {
@@ -128,8 +133,13 @@ module.exports = {
           }
         },
         '.caption-2': {
-          fontSize: pxToVw(18),
-          lineHeight: pxToVw(20),
+          fontSize: '10px',
+          lineHeight: 'auto',
+
+          '@media (min-width: 768px)': {
+            fontSize: '18px',
+            lineHeight: '20px',
+          }
         }
       })
     })

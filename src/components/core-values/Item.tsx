@@ -6,7 +6,7 @@ interface IProps {
 
 const CoreValueItem = (props: IProps) => {
   return(
-    <div className="rounded-sm drop-shadow-main bg-neutral-100 px-8 py-4 md:px-16 md:py-8">
+    <div className="rounded-sm drop-shadow-main bg-neutral-100 px-4 md:px-8 py-4 md:px-16 md:py-8">
       <div className="flex items-center gap-4 md:gap-8">
         <div className="h-20 md:h-32 grow shrink-0">
           <img 
