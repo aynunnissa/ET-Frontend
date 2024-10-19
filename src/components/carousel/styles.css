@@ -26,8 +26,6 @@ body {
   text-align: center;
   font-size: 18px;
   background: #fff;
-
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,8 +36,8 @@ body {
 }
 
 .swiper-pagination-bullet {
-  width: 62px !important;
-  height: 10px !important;
+  width: 32px !important;
+  height: 4px !important;
   border-radius: 5px !important;
   text-align: center;
   line-height: 20px;
@@ -47,6 +45,11 @@ body {
   color: #000;
   opacity: 1;
   background: #B7B7B7 !important;
+
+  @media screen and (min-width: 640px) {
+    width: 62px !important;
+    height: 10px !important;
+  }
 }
 .swiper-pagination-bullet-active {
   background: #FFCD00 !important;

@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .navigation {
+    .navigation__links {
+      @apply flex-col w-auto min-w-[50%] min-h-fit fixed top-[60px] bg-white p-4 rounded-l-lg;
+      @apply md:flex-row md:w-full md:static md:bg-transparent md:p-0 md:rounded-none;
+    }
+  
+    .navigation__items li:first-of-type a {
+      @apply font-bold
+    }
+  }
+}

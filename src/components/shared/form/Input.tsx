@@ -1,5 +1,5 @@
 import { FORM_ERROR } from "../../contact-us/constants";
-import styles from "./form.module.css";
+import "./form.css";
 
 interface IProps {
   type: string,
@@ -17,7 +17,7 @@ const Input = (props: IProps) => {
       <input
         type="text"
         id={props.type}
-        className={styles.form__input}
+        className="form__input"
         onChange={props.valueChangeHandler}
         onBlur={props.inputBlurHandler}
         value={props.value}
